@@ -79,7 +79,7 @@ def aot_compile_warning():
 
 def aot_compile(
     f: Callable,
-    args: tuple[Any],
+    args: tuple[...],
     kwargs: Optional[dict[str, Any]] = None,
     *,
     dynamic_shapes: Optional[dict[str, Any]] = None,
